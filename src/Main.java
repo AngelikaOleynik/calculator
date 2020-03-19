@@ -19,7 +19,7 @@ public class Main {
             }
             Calculator.calculator(list.get(0), list.get(1), list.get(2));
         } catch (Exception e) {
-            System.out.println("Ты ввел не верные данные, внимательно прочитай условия");
+            System.out.println("Ошибка! Проверь правильность ввода чисел!");
         }
         System.exit(0);
     }
