@@ -4,7 +4,7 @@ import java.util.TreeMap;
 
 class RomanArabicNumberConverter {
 
-    private final static TreeMap<Integer, String> map = new TreeMap<Integer, String>();
+    private final static TreeMap<Integer, String> map = new TreeMap<>();
 
     static {
         map.put(100, "C");
@@ -18,11 +18,11 @@ class RomanArabicNumberConverter {
         map.put(1, "I");
     }
 
-    private static List<String> roman = new ArrayList<String>();
+    private static List<String> roman = new ArrayList<>();
 
     static {
-        roman.add( "Нулевое значение");
-        roman.add( "I");
+        roman.add("Нулевое значение");
+        roman.add("I");
         roman.add("II");
         roman.add("III");
         roman.add("IV");
@@ -35,7 +35,7 @@ class RomanArabicNumberConverter {
     }
 
     public static String toRoman(int number) {
-        int l = map.floorKey(number);
+        int l = map.floorKey(number); //возвращает наибольший ключ, который меньше или равен ключу obj. Если такого ключа нет, то возвращается null.
         if (number == l) {
             return map.get(number);
         }

@@ -1,4 +1,4 @@
 public interface Action
 {
-    int nums(int first, int second);
+    int nums(int firstNum, int secondNum);
 }
