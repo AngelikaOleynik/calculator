@@ -7,9 +7,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        System.out.println("Введите данные в формате: 2 + 2 или I + I. Пробелы обязательны");
-        System.out.println("Программа принимает как арабские, так и римские цифры");
-        System.out.println("Числа от 1 до 10, или от I до X включительно");
+        System.out.println("Введите данные в формате: 2 + 2 или I + I. Пробелы обязательны.");
+        System.out.println("Программа принимает как арабские, так и римские числа от 1 до 10, или от I до X.");
 
         List<String> list = new ArrayList<>();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
